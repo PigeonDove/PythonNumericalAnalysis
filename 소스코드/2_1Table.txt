@@ -1,0 +1,36 @@
+1)
+low, high = [1, 2]
+mid = 1.5
+f(low), f(mid) =  [-1, 0.25] 음수 / low = low, high = mid
+
+2)
+low, high = [1, 1.5]
+mid = 1.25
+f(low), f(mid) =  [-1, -0.4375] 양수 / low = mid, high = high
+
+3)
+low, high = [1.25, 1.5]
+mid = 1.375
+f(low), f(mid) =  [-0.4375,-0.109375] 양수 / low = mid, high = high
+
+4)
+low, high = [1.375, 1.5]
+mid = 1.4375
+f(low), f(mid) =  [-0.109375, 0.06640625] 음수 / low = low, high = mid
+
+5)
+low, high = [1.375, 1.4375]
+mid = 1.40625
+f(low), f(mid) =  [-0.109375, -0.0224609375] 양수 / low = mid, high = high
+
+6)
+low, high = [1.40625, 1.4375]
+mid = 1.421875
+f(low), f(mid) =  [-0.0224609375, 0.021728515625]  음수 / low = low, high = mid
+
+7)
+low, high = [1.40625, 1.421875]
+mid = 1.4140625
+f(low), f(mid) =  [-0.0224609375, -0.00042724609375] 양수 / low = mid, high = high
+
+
