@@ -11,19 +11,19 @@ m = 4                         # 구간 수 (짝수여야 함)
 h = (last - first) / m        # 간격
 
 # 초기화
+i = 0
 areas = 0                     # 면적 총합
 
-# 2칸씩 건너뛰며 3개 점(x0, x1, x2)을 사용해 면적 계산
-i = 0
+# 2칸씩 건너뛰며 3개 점(x1, x2, x3)을 사용해 면적 계산
 while i < m:
-    x0 = first + i * h
-    x1 = x0 + h
-    x2 = x0 + 2*h
+    x1 = first + i * h
+    x2 = x1 + h
+    x3 = x1 + 2*h
 
-    area = (x2 - x0) / 6 * (f(x0) + 4*f(x1) + f(x2))  # 심슨의 법칙
+    area = (x3 - x1) / 6 * (f(x1) + 4*f(x2) + f(x3))  # 심슨의 법칙
     areas += area
 
-    print(f"[{x0:.2f}, {x2:.2f}] -> f = ({f(x0):.4f}, {f(x1):.4f}, {f(x2):.4f}) , area = {area:.4f}")
+    print(f"[{x1:.2f}, {x2:.2f}] -> f = ({f(x3):.4f}, {f(x2):.4f}, {f(x3):.4f}) , area = {area:.4f}")
 
     i += 2                             # 두 칸씩 진행
 
