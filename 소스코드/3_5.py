@@ -16,9 +16,9 @@ areas = 0                     # 면적 총합
 
 # 2칸씩 건너뛰며 3개 점(x1, x2, x3)을 사용해 면적 계산
 while i < m:
-    x1 = first + i * h
-    x2 = x1 + h
-    x3 = x1 + 2*h
+    x1 = first + (2*i - 2) * h
+    x2 = first + (2*i - 1) * h
+    x3 = first + (2*i) * h
 
     area = (x3 - x1) / 6 * (f(x1) + 4*f(x2) + f(x3))  # 심슨의 법칙
     areas += area
