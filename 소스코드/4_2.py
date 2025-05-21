@@ -9,8 +9,8 @@ def f(x):
 def backward_diff(x, h):
     return (f(x) - f(x - h)) / h
 
-# x 값들을 linspace로 생성 (1부터 4까지 20개 값)
-x_values = np.linspace(1, 4, 20)
+# x 값들을 linspace로 생성 (1부터 4까지 4개 값)
+x_values = np.linspace(1, 4, 4)
 h = 0.01                                   # 후진 차분용 아주 작은 h 값
 
 # 후진 차분 근사값과 실제 도함수 값을 저장할 리스트
